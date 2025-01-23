@@ -47,7 +47,7 @@ var currentAngle = 0;
 const cdImg = document.querySelector('.cd-img');
 
 function toggleRotation() {    
-    const rotateTime = 5
+    const rotateTime = 30
     if (isRotating) {
         console.log('Stop rotation');
         const computedStyle = window.getComputedStyle(cdImg);
