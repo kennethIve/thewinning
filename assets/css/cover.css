@@ -33,12 +33,15 @@ body {
   max-width: 500px;
 }
 
-.cd-img{
-  animation: rotate 100s linear infinite;
+.cd-img{  
+  /* animation: rotate 100s linear infinite; */
   width: 80%;
   height: auto;
 }
 
+.cd-img:hover{
+  cursor: pointer;
+}
 .cd-youtube{  
   position: absolute; /* Add absolute positioning */  
   top: 50%;
@@ -51,10 +54,10 @@ body {
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(var(--start-deg, 0deg));
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
 }
 

@@ -37,9 +37,12 @@
     <main class="px-3">
       <!-- <h1 class="cover-heading">The Wining</h1> -->
       <div class="CD">
-        <img src="assets/img/cd2.png" class="cd-img"  alt="CD">
-        <iframe class="cd-youtube" height="200" width="300" 
-          src="https://www.youtube.com/embed/pDvBiB1waBk?autoplay=1&mute=1" allowfullscreen>
+        <h1 class="cover-heading">Click to Play</h1>
+        <img src="assets/img/cd3.png" class="cd-img" alt="CD" onclick="toggleCD()">
+        <iframe id="cd-youtube" class="cd-youtube" height="200" width="300" 
+            src="https://www.youtube.com/embed/pDvBiB1waBk?enablejsapi=1&autoplay=1"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
         </iframe>
       </div>
     </main>
@@ -60,10 +63,11 @@
       </div>
     </footer>
   </div>
+  <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>  
-  <script src="assets/js/main.js"></script>
+  
 
 </body>
 
